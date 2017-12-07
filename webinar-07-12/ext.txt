@@ -1,0 +1,3 @@
+- Live Server
+- HTMLHint
+- Prettier
