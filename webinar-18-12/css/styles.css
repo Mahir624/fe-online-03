@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.page {
+  padding-top: 50px;
+}
+
+.wrapper {
+  width: 600px;
+  margin: auto;
+}
+
+.article {
+  margin-bottom: 30px;
+  padding: 20px;
+  color: #424242;
+  box-shadow: 0 0 2px 2px rgba(31, 31, 31, 0.3);
+}
+
+.article h2 {
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+
+.article img {
+  width: 100%;
+}
+
+.article p {
+  margin-bottom: 30px;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.article a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #3f51b5;
+  font-weight: 700;
+}
+
+.article a:hover {
+  color: #009688;
+}
