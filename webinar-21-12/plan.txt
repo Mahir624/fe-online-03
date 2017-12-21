@@ -1,0 +1,24 @@
+Повторяем:
+- Составляющие элемента
+- Модель визуального форматирования, box-sizing
+- Сброс стилей по умолчанию
+- Наследование
+- Каскад
+- Приоритетность
+- DevTools для CSS
+
+<link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One" rel="stylesheet">
+
+Учим:
+- DOM CSSOM Render Tree
+https://developers.google.com/web/fundamentals/performance/critical-rendering-path/images/render-tree-construction.png
+
+- Блочная верстка: свойство display: inline|inline-block|block
+/* inline -> block
+inline -> inline-block
+block -> inline-block */
+
+- Горизонтальное и вертикальное выравнивание
+- Фон
+- Links https://codepen.io/Zerk/pen/ZaGQzB
+- Columns https://codepen.io/Zerk/pen/OOJJzK
