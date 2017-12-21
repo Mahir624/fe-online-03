@@ -61,7 +61,6 @@ body {
   display: inline-block;
   width: 25%;
   padding: 10px;
-  margin-right: -4px;
   border-radius: 4px;
   vertical-align: top;
   background-color: #fff;
@@ -81,8 +80,9 @@ body {
 /* Postfeed */
 .postfeed {
   display: inline-block;
-  width: 75%;
-  padding: 0 10px;
+  width: 73%;
+  margin-left: 2%;
+  margin-right: -4px;
   vertical-align: top;
 }
 
@@ -101,4 +101,3 @@ body {
 .post p {
   margin-top: 10px;
 }
-
