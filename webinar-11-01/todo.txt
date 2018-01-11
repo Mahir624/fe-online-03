@@ -1,0 +1,35 @@
+- html body height 100%
+
+- Сброс стилей от user agent. reset.css
+
+- rel="noopener"
+  https://mathiasbynens.github.io/rel-noopener/
+  https://developers.google.com/web/tools/lighthouse/audits/noopener
+
+- line-height and vertical centering
+
+- bg image vs image
+  http://xiper.net/learn/tegofenshuj/img-vs-backround-image
+  http://buildawesomewebsites.com/blog/html-img-tags-vs-css-background-images
+
+- data URI
+  https://css-tricks.com/data-uris/
+
+- vertical margin & padding % - НЕТ!
+
+- Работа с цветом, rgb, hex, hls. Прозрачность, rgba\hlsa.
+
+- Псевдоэлементы before и after
+  https://www.w3schools.com/css/css_pseudo_elements.asp
+
+- Основы Float - Очистка обтекания
+  https://codepen.io/Zerk/pen/ZXQyjr?editors=0100
+
+- Float как инструмент обтекания картинки текстом
+
+- Горизонтальное меню на float
+
+- calc
+
+- basic CSS parallax
+  https://codepen.io/GoIT-fe/pen/rpJpWV?editors=1100
