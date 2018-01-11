@@ -1,6 +1,6 @@
-- html body height 100%
+- html body height 100% - НЕ ИСПОЛЬЗОВАТЬ!
 
-- Сброс стилей от user agent. reset.css
+- Сброс стилей от user agent. reset.css или normalize.css
 
 - rel="noopener"
   https://mathiasbynens.github.io/rel-noopener/
@@ -30,6 +30,3 @@
 - Горизонтальное меню на float
 
 - calc
-
-- basic CSS parallax
-  https://codepen.io/GoIT-fe/pen/rpJpWV?editors=1100

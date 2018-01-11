@@ -26,7 +26,7 @@ body {
   text-align: center;
   line-height: 150px;
   border-radius: 50%;
-
+  vertical-align: middle;
   transition: all 0.3s ease-in-out;
 }
 
@@ -36,10 +36,10 @@ body {
 }
 
 /* Pseudo container*/
-
 .pseudo-container {
   background-color: #424242;
   padding: 20px;
+  margin-bottom: 20px;
 }
 
 .text-box {
@@ -98,6 +98,7 @@ body {
 
 .float-container {
   padding: 20px;
+  margin-bottom: 20px;
   background-color: #424242;
 }
 
@@ -110,7 +111,6 @@ body {
 
 .second-box {
   float: right;
-  /* float: right; */
   background-color: #009688;
   height: 300px;
   width: 300px;
@@ -149,35 +149,27 @@ body {
   line-height: 1.5;
 }
 
-.hidden {
-  display: none;
-}
-
 /* header */
-
 .header {
   width: 100%;
   background-color: teal;
   padding: 10px;
-}
-
-.logo {
-  display: inline-block;
+  margin-bottom: 20px;
 }
 
 .menu {
   display: inline-block;
-  text-align: right;
-  width: calc(100% - 190px);
   padding: 10px;
-  /* background-color: #424242; */
+  width: calc(100% - 156px);
+  background-color: #424242;
+  vertical-align: middle;
 }
 
 .menu a {
-  display: inline-block;
+  float: right;
   padding: 5px;
   text-transform: uppercase;
-  margin-right: 15px;
+  margin-left: 15px;
   color: #ffffff;
   text-decoration: none;
   background-color: red;
@@ -189,7 +181,7 @@ body {
 
 .menu a:last-child {
   background-color: green;
-  margin-right: 0;
+  margin-left: 0;
 }
 
 .menu a:hover {
