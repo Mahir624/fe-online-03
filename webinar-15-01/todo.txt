@@ -1,0 +1,36 @@
+- header с выравниванием двух inline-block по сторонам
+
+- https://gist.github.com/
+
+- CSS счетчики
+  https://codepen.io/Zerk/pen/BwNPLL?editors=0100
+
+- ::selection
+
+- Псевдоклассы:
+  - hover
+  - f/l-child
+  - target
+  - nth-child, nth-last-child
+  - nth-of-type, nth-last-of-type
+
+  https://css-tricks.com/useful-nth-child-recipies/
+  https://css-tricks.com/examples/nth-child-tester/
+
+- multiple backgrounds: https://codepen.io/Zerk/pen/JMZmmJ?editors=0100
+
+- attribute selector and content: attr(href)
+  https://www.w3schools.com/css/css_attribute_selectors.asp
+
+- image object-fit
+
+- Галлерея карточек на float, используем что выучили
+
+
+4n+1
+
+4*0 + 1 = 1
+
+4*1 + 1 = 5
+
+4*2 + 1 = 9

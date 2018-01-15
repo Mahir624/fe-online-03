@@ -1,0 +1,263 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.body {
+  min-height: 100vh;
+  font-family: 'Lato', sans-serif;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* header */
+.header {
+  padding: 12px;
+  margin-bottom: 24px;
+  text-align: justify;
+  font-size: 0;
+  background-color: #2196f3;
+  box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.header::after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+  height: 0;
+  font-size: 0;
+}
+
+.logo {
+  display: inline-block;
+  vertical-align: middle;
+  width: 70px;
+  height: 70px;
+  text-decoration: none;
+  background-image: url('https://cdn.worldvectorlogo.com/logos/react-native-firebase-1.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-color: #ca3c3c; */
+}
+
+.menu {
+  /* background-color: #ca3c3c; */
+  display: inline-block;
+  vertical-align: middle;
+  /* width: calc(100% - 74px); */
+  /* text-align: right; */
+}
+
+.menu a {
+  display: inline-block;
+  padding: 10px;
+  font-size: 16px;
+  margin-right: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  border-bottom: 2px solid transparent;
+}
+
+.menu a:last-child {
+  margin-right: 0;
+}
+
+.menu a:hover {
+  border-color: #ffffff;
+}
+
+/* postfeed */
+.postfeed {
+  counter-reset: postNumber;
+  margin-bottom: 20px;
+}
+
+.post {
+  counter-increment: postNumber;
+  margin-bottom: 24px;
+  padding: 10px;
+  color: #212121;
+  box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.3);
+}
+
+.post:last-child {
+  margin-bottom: 0;
+}
+
+.post h2::selection,
+.post p::selection {
+  background-color: #424242;
+  color: #ffffff;
+}
+
+/* .post:last-child {
+  margin-bottom: 0;
+} */
+
+.post h2 {
+  font-size: 24px;
+  line-height: 1.3;
+  margin-bottom: 10px;
+}
+
+.post h2::before {
+  display: inline-block;
+  margin-right: 10px;
+  /* content: '#'; */
+  /* content: counter(postNumber); */
+  /* content: '[' counter(postNumber) ']'; */
+  content: counter(postNumber, upper-roman) ' - ';
+}
+
+.post p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* list */
+.list {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  margin-bottom: 20px;
+  padding: 20px 0;
+  list-style: none;
+}
+
+.list li {
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.list li:last-child {
+  margin-bottom: 0;
+  /* background-color: red; */
+}
+
+.list li:first-child {
+  /* background-color: red; */
+}
+/* an + b */
+.list li:nth-child(3n) {
+  background-color: red;
+}
+
+/* attribute selector */
+.links {
+  margin-bottom: 20px;
+}
+
+.links a {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 2px solid #424242;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* [attribute = "value"] */
+/* [имя-атрибута = значение] */
+/* .links a[href = "https://twitter.com"] {
+  background-color: red;
+} */
+
+/* [attribute ~= "value"] - выбирает те что содержат value как слово*/
+/* a[href ~= 'https://google.com'] {
+  background-color: green;
+} */
+
+/* [attribute |= "value"] - выбирает те что начинаются с определенного слова и сразу заканчивается или за ним следует тире*/
+/* a[href |= 'https://google.com'] {
+  background-color: blue;
+} */
+
+/* [attribute ^= "value"] - выбирает те что начинаются с подстроки */
+/* a[href ^= 'https://google.com'] {
+  background-color: palevioletred;
+} */
+
+/* [attribute $= "value"] - выбирает те что заканчиваются подстрокой */
+/* a[href $= 'https://google.com'] {
+  background-color: orange;
+} */
+
+/* [attribute *= "value"] - выбирает те что содержат подстроку */
+/* a[href *= 'https://'] {
+  background-color: greenyellow;
+} */
+
+/* gallery */
+.gallery {
+  padding: 10px;
+  list-style: none;
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
+}
+
+.gallery li {
+  outline: 2px solid #424242;
+  float: left;
+  width: 30%;
+  margin-right: 5%;
+  margin-bottom: 20px;
+}
+
+.gallery li:nth-child(3n) {
+  margin-right: 0;
+}
+
+.gallery li:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+.clearfix::after {
+  display: table;
+  content: '';
+  clear: both;
+}
+
+.card {
+  padding: 16px;
+  font-family: 'Lato', sans-serif;
+}
+
+.card img {
+  display: block;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+
+.card h1 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.3;
+}
+
+.card p {
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.card i {
+  display: block;
+  margin-left: auto;
+  width: 50px;
+  height: 50px;
+  background-image: url(https://image.flaticon.com/icons/svg/189/189671.svg);
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+
+/* p:target {
+  background-color: red;
+} */
