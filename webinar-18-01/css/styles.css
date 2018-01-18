@@ -1,0 +1,150 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.menu {
+  background-color: orange;
+  padding: 10px;
+}
+
+.menu-item {
+  padding: 10px;
+  background-color: red;
+  position: relative;
+  display: inline-block;
+  /* background-color: #ccc; */
+}
+
+.menu-link,
+.submenu-link {
+  display: block;
+  padding: 5px;
+}
+
+/* Когда происходит состояние hover на menu-item
+  тогда submenu внтури этого menu-item получает
+  display: block
+  */
+.menu-item:hover > .submenu {
+  display: block;
+}
+
+/* .menu-link:hover + .submenu {
+  display: block;
+} */
+
+.submenu {
+  display: none;
+  position: absolute;
+  width: 300px;
+  top: 100%;
+  left: 0;
+  /* display: none; */
+  background-color: #9fa8da;
+}
+
+/* card */
+.card {
+  position: relative;
+  width: 262px;
+  background-color: #e1e6ea;
+}
+
+.card:hover > .card-icons {
+  display: block;
+}
+
+.card:hover > .card-content {
+  background-color: #3a454d;
+}
+
+.card:hover > .card-content span {
+  color: #ffffff;
+}
+
+.card-image {
+  display: block;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-name {
+  display: block;
+  color: #292f36;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 35px;
+  text-transform: uppercase;
+}
+
+.card-position {
+  color: #8d8f92;
+  font-family: OpenSans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.card-icons {
+  display: none;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.card-icon {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: #3a454d;
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card-icon:hover {
+  background-color: #4e5a62;
+}
+
+.twitter {
+  background-image: url('https://image.flaticon.com/icons/svg/174/174876.svg');
+}
+
+.facebook {
+  background-image: url('https://image.flaticon.com/icons/svg/145/145802.svg');
+}
+
+.linkedin {
+  background-image: url('https://image.flaticon.com/icons/svg/145/145807.svg');
+}
