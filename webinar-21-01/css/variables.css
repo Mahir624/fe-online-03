@@ -1,0 +1,10 @@
+:root {
+  --main-font-color: #000000;
+  --main-title-color: #d87093;
+
+  --main-font-stack: Roboto, sans-serif;
+  --title-font-stack: Anton, sans-serif;
+
+  --default-font-size: 16px;
+  --default-line-height: 1.5;
+}

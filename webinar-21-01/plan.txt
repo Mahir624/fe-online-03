@@ -1,0 +1,12 @@
+- Переменные CSS
+
+- CSS преобразования: transform
+  https://codepen.io/Zerk/pen/MOWgMw
+
+- CSS filter
+  https://davidwalsh.name/demo/css-filters.php
+
+- Стандарт HTML5. Понятие семантической верстки.Основные семантические теги.
+  https://codepen.io/mi-lee/post/an-overview-of-html5-semantics
+
+- http://kenwheeler.github.io/slick/
