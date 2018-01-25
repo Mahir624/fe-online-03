@@ -1,0 +1,170 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.wrapper {
+  max-width: 960px;
+  margin: auto;
+  outline: 2px solid red;
+  padding: 10px;
+}
+
+.masthead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  flex: 1 0 100%;
+}
+
+.logo {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  background-image: url('https://image.flaticon.com/icons/svg/703/703357.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu a {
+  display: block;
+  padding: 5px 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 24px;
+  color: #424242;
+  border: 2px solid transparent;
+}
+
+.menu a:hover {
+  border-color: #424242;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sidebar {
+  flex: 0 0 25%;
+  outline: 2px solid teal;
+}
+
+.content {
+  flex: 0 0 70%;
+  outline: 2px solid palevioletred;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery li {
+  flex: 1 0 30%;
+  padding: 5px;
+}
+
+.social-links {
+  display: flex;
+}
+
+.social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  margin-right: 5px;
+  background-color: teal;
+}
+
+.social-links a:last-child {
+  margin-right: 0;
+}
+
+.mastfoot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  flex: 1 0 100%;
+  outline: 2px solid blue;
+}
+
+/* .flex-container {
+  position: relative;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center; */
+/* flex-wrap: wrap; */
+/* align-items: center;
+  justify-content: center; */
+/* align-content: space-around; */
+/* padding: 20px;
+  background-color: #424242;
+} */
+
+/*
+width vs flex-basis,
+align-self,
+flex-grow,
+flex-shrink,
+order.
+*/
+
+/* img {
+  display: block;
+  width: 100%;
+}
+
+.flex-child {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  font-size: 40px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.flex-child:nth-child(1) {
+  background-color: #214e34;
+}
+
+.flex-child:nth-child(2) {
+  background-color: #ffb140;
+}
+
+.flex-child:nth-child(3) {
+  background-color: #d1462f;
+}
+
+.flex-child:nth-child(4) {
+  background-color: #197bbd;
+} */

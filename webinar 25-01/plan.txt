@@ -1,0 +1,9 @@
+- Знакомство с Flexbox
+- display: flex
+- Понятие flex-контейнера и flex-элемента.
+- Flex-оси и flex-direction.
+- Выравнивание flex-элементов на оси, justify-content, align-items.
+- Свойства flex-элемента: width vs flex-basis, align-self, flex-grow, flex-shrink, order.
+- Многострочные flex-контейнеры и align-content.
+
+https://codepen.io/Zerk/pen/ZKbrjW
