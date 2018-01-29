@@ -1,0 +1,75 @@
+/*
+*  Type: Gamma
+*/
+
+.card.gamma-effect::before {
+  background: linear-gradient(to bottom, #e80202 0%, #f578d4 100%);
+  opacity: 0;
+  transition: opacity 0.2s var(--animation-out-easing);
+  z-index: 5;
+}
+
+.card.gamma-effect:hover::before {
+  opacity: 0.5;
+  visibility: visible;
+  transition: opacity 0.2s var(--animation-in-easing);
+}
+
+.card.gamma-effect:hover .card-meta {
+  transform: translate3d(0, 0, 0) scale(1);
+  opacity: 1;
+  transition: transform 0.2s var(--animation-in-easing);
+}
+
+.card.gamma-effect:hover .card-image {
+  transform: scale(1.25) translate3d(0, 0, 0);
+  transition: 0.2s var(--animation-in-easing);
+}
+
+.card.gamma-effect:hover .card-category {
+  transition: 0.15s 0.2s var(--animation-in-easing);
+}
+
+.card.gamma-effect .card-image {
+  transform: scale(1.2);
+  transition: transform 0.2s var(--animation-out-easing);
+}
+
+.card.gamma-effect .card-meta {
+  color: #fff;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  bottom: 20px;
+  left: 20px;
+  z-index: 10;
+  transform: scale(0.8);
+  opacity: 0;
+  transition: 0.2s var(--animation-out-easing);
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #fff;
+  padding: 25px 30px;
+}
+
+.card.gamma-effect .card-meta-inner {
+  padding: 40px;
+  text-align: center;
+}
+
+.card.gamma-effect .card-title {
+  transition: 0.2s var(--animation-out-easing);
+}
+
+.card.gamma-effect .card-category {
+  color: rgba(255, 255, 255, 0.7);
+  transition: 0.2 var(--animation-out-easing);
+  font-size: 16px;
+  padding: 5px 0 0 0;
+  position: relative;
+  z-index: 20;
+  margin-top: 5px;
+}

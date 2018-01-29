@@ -1,0 +1,91 @@
+@import url('variables.css');
+@import url('base.css');
+@import url('card/index.css');
+
+/* h1 {
+  padding: 5px;
+  border: 2px solid #424242;
+  box-shadow: inset 0px 0px 5px 2px red,
+  8px 8px 4px 2px rgba(0, 0, 0, 0.3);
+}
+
+h1:hover {
+  text-shadow: 2px 2px 5px #424242, 4px 4px 5px red, 6px 6px 5px violet;
+  /* box-shadow: 8px 8px 4px 2px rgba(0, 0, 0, 0.3),
+  12px 12px 4px 2px rgba(255, 0, 0, 0.3); */
+/* } */
+
+.box {
+  height: 200px;
+  width: 200px;
+  background-color: teal;
+
+  /* transition-property: background-color;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+  transition-delay: 1s; */
+
+  /* transition: background-color 0.2s linear,
+            transform 0.3s ease-out 0.5s,
+            box-shadow 0.3s linear; */
+
+  /* animation-name: color;
+  animation-duration: 2s; */
+
+  animation: coolAnimation 1s ease-in-out infinite;
+}
+
+.box:hover {
+  animation-play-state: paused;
+  /* background-color: palevioletred;
+  transform: rotate(45deg);
+  box-shadow: 4px 4px 2px 2px rgba(0, 0, 0, 0.3); */
+}
+
+@keyframes coolAnimation {
+  0% {
+    transform: rotate(0);
+    background-color: red;
+  }
+
+  25% {
+    /* transform: rotate(180deg); */
+    background-color: orange;
+  }
+
+  50% {
+    /* transform: rotate(270deg); */
+    background-color: palevioletred;
+  }
+
+  100% {
+    transform: rotate(360deg);
+    background-color: green;
+  }
+}
+
+.example {
+  position: relative;
+  height: 300px;
+  width: 300px;
+  background-color: #424242;
+  overflow: hidden;
+}
+
+.example:hover .inner {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 50%;
+  background-color: palevioletred;
+  color: #ffffff;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: transform 0.3s linear, opacity 0.3s linear;
+}

@@ -1,0 +1,4 @@
+:root {
+  --animation-in-easing: cubic-bezier(0.54, 0.15, 0.22, 0.89);
+  --animation-out-easing: linear;
+}
