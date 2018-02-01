@@ -1,0 +1,67 @@
+masthead-wrapper
+  -> container
+    -> masthead
+      -> logo
+      -> nav
+        -> nav-item
+        -> nav-link
+    -> hero
+      -> hero-title
+      -> hero-btn
+
+team-wrapper
+  -> container, section, team
+    -> section-header
+      -> section-header-caption
+      -> section-header-title
+      -> section-header-text
+    -> team-list
+      -> team-list-item
+        -> team-card
+          -> team-card-image
+            -> team-card-icons
+              -> team-card-icon
+          -> team-card-meta
+            -> team-card-name
+            -> team-card-pos
+
+-> facts-wrapper
+  -> container, section, facts
+    -> facts-list
+      -> facts-list-item
+        -> facts-card
+          -> facts-card-count
+          -> facts-card-text
+
+-> clients-wrapper
+  -> container, section, clients
+    -> section-header
+      -> section-header-caption
+      -> section-header-title
+      -> section-header-text
+    -> clients-list
+      -> clients-list-item
+        -> client-post
+          -> client-post-image
+          -> client-post-content
+            -> client-post-name
+            -> client-post-pos
+            -> client-post-text
+
+-> blog-wrapper
+  -> container, section, blog
+    -> section-header
+      -> section-header-caption
+      -> section-header-title
+    -> posts-list
+      -> posts-list-item
+        -> blog-post
+          -> blog-post-image
+          -> blog-post-date
+          -> blog-post-content
+            -> blog-post-title
+            -> blog-post-text
+          -> blog-post-emeta
+            -> blog-post-views
+            -> blog-post-comments
+
