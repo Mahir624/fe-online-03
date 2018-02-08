@@ -1,0 +1,25 @@
+- form, focus-within
+- input всевозможных типов, от text до range.
+- placeholder и его стилизация.
+- autofocus
+- label
+- button:submit и button:reset
+- Важность атрибута name.
+- required, :required и :optional
+- немного оформления валдиации: :valid, :invalid, :in-range, :out-of-range
+- минус валидация c novalidate
+- fieldset и legend
+- checkbox и radio
+- select, optgroup
+- datalist
+- кастомные чеки\радио и т. п.
+
+https://codepen.io/Zerk/pen/qPKzWQ?editors=0100
+
+https://www.w3schools.com/html/html_form_input_types.asp
+
+http://brennaobrien.com/blog/2014/05/style-input-type-range-in-every-browser.html
+
+https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/
+
+http://blog.teamtreehouse.com/use-meter-progress-elements
