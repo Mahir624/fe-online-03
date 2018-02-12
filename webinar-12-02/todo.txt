@@ -1,0 +1,12 @@
+- Философия отзывчивой и адаптивной верстки.
+- viewport meta tag.
+
+- Правила responsive верстки: width в %, min и max width.
+
+- Chrome DevTools для работы с мобильной версткой.
+- Медиаправила.
+
+- Mobile-first CSS
+
+https://itchief.ru/lessons/html-and-css/meta-viewport-how-it-works
+https://developer.mozilla.org/ru/docs/Mozilla/Mobile/Viewport_meta_tag

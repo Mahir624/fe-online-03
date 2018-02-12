@@ -1,0 +1,28 @@
+/* TEAM */
+.team-list-item {
+  border: 0.125rem solid var(--black-color);
+}
+
+.team-card {
+  padding: 0.5rem;
+  color: var(--black-color);
+}
+
+.team-card-meta {
+  height: 4rem;
+  font-size: 1.25rem;
+  line-height: 4rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .team-list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .team-list-item {
+    flex: 0 0 23%;
+    max-width: 23%;
+  }
+}
