@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Webinar 15-02</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <!-- <img src="images/team-member.jpeg" alt=""> -->
+
+  <!-- <div class="box"></div> -->
+
+  <!--
+    Создайте открывающий и закрывающий теги <picture></picture>.
+    Внутри создайте <source> элемент для каждого выражения, что хотите обработать.
+    Добавьте атрибут media, содержащий выражения для таких вещей как высота и ширина области просмотра, ориентация и т.д.
+    Добавьте атрибут srcset с соответствующим именем файла изображения для загрузки.
+    Добавьте дополнительные имена файлов к атрибуту srcset, если нужно поддерживать разную плотность пикселей, например для Retina дисплеев.
+    Добавьте резервный (fallback) элемент <img>
+  -->
+
+  <!-- <picture>
+    <source media="(min-width: 700px)"
+            srcset="http://via.placeholder.com/700x240.jpg 1x,
+                    http://via.placeholder.com/1400x480.jpg 2x">
+
+    <source media="(min-width: 400px)"
+            srcset="http://via.placeholder.com/200x400.jpg 1x,
+                    http://via.placeholder.com/400x800.jpg 2x">
+
+    <source srcset="http://via.placeholder.com/320x240.jpg 1x,
+                    http://via.placeholder.com/640x480.jpg 2x">
+
+    <img src="http://via.placeholder.com/320x240.jpg" alt="image">
+  </picture> -->
+
+  <!-- <picture>
+    <source media="(orientation: portrait)"
+            srcset="images/image-tall.jpg">
+    <source media="(orientation: landscape)"
+            srcset="images/image-wide.jpg">
+    <img src="images/image-wide.jpg" alt="an image">
+  </picture> -->
+
+
+  <!-- <img src="https://placeimg.com/1024/768/people"
+      srcset="https://placeimg.com/320/240/animals 320w,
+              https://placeimg.com/640/480/tech 640w,
+              https://placeimg.com/1024/768/people 1024w"
+      sizes="(min-width: 600px) 50vw,
+              (min-width: 800px) 33vw,
+               100vw"
+      alt="qweqweqwe"> -->
+
+
+
+  <ul class="gallery">
+    <li class="gallery-item">
+      <img
+        src="http://via.placeholder.com/320x240.jpg"
+        srcset="http://via.placeholder.com/320x240.jpg 320w,
+                http://via.placeholder.com/640x480.jpg 640w,
+                http://via.placeholder.com/1024x768.jpg 1024w"
+        sizes="(min-width: 640px) 50vw,
+               (min-width: 1024px) 25vw,
+               100vw"
+        alt="some random image">
+    </li>
+    <li class="gallery-item">
+        <img
+        src="http://via.placeholder.com/320x240.jpg"
+        srcset="http://via.placeholder.com/320x240.jpg 320w,
+                http://via.placeholder.com/640x480.jpg 640w,
+                http://via.placeholder.com/1024x768.jpg 1024w"
+        sizes="(min-width: 640px) 50vw,
+               (min-width: 1024px) 25vw,
+               100vw"
+        alt="some random image">
+    </li>
+    <li class="gallery-item">
+        <img
+        src="http://via.placeholder.com/320x240.jpg"
+        srcset="http://via.placeholder.com/320x240.jpg 320w,
+                http://via.placeholder.com/640x480.jpg 640w,
+                http://via.placeholder.com/1024x768.jpg 1024w"
+        sizes="(min-width: 640px) 50vw,
+               (min-width: 1024px) 25vw,
+               100vw"
+        alt="some random image">
+    </li>
+    <li class="gallery-item">
+        <img
+        src="http://via.placeholder.com/320x240.jpg"
+        srcset="http://via.placeholder.com/320x240.jpg 320w,
+                http://via.placeholder.com/640x480.jpg 640w,
+                http://via.placeholder.com/1024x768.jpg 1024w"
+        sizes="(min-width: 640px) 50vw,
+               (min-width: 1024px) 25vw,
+               100vw"
+        alt="some random image">
+    </li>
+  </ul>
+
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+
+https://www.smashingmagazine.com/2014/05/responsive-images-done-right-guide-picture-srcset/
+
+https://webdesign.tutsplus.com/ru/tutorials/quick-tip-how-to-use-html5-picture-for-responsive-images--cms-21015
+
+https://css-tricks.com/responsive-images-youre-just-changing-resolutions-use-srcset/
+
+https://ericportis.com/posts/2014/srcset-sizes/
+
+https://dev.opera.com/articles/responsive-images/
+
+https://dev.opera.com/articles/native-responsive-images/
+
+
+
+
+
