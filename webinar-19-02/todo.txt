@@ -1,0 +1,36 @@
+https://codepen.io/Zerk/pen/xYYjdz
+
+- Спека
+https://www.w3.org/TR/html51/dom.html#categories
+
+  https://www.w3.org/TR/html51/
+  http://spec.piraruco.com/html5/index.htm
+
+- сеточный вьюпорт и визуальный вьюпорт
+  https://monosnap.com/file/Gdqfeei7GIbuZ2uAmR6kjCP64cNJAf
+  медиа работают на сеточный, нам надо на визуальный,
+  для этого и viewport
+  width(сеточный)=device-width(визуальный)
+  initial-scale=1 тоже самое что выше... для других браузеров
+
+https://www.w3.org/TR/css-device-adapt-1/#at-ruledef-viewport
+  @viewport {
+    width: device-width;
+    zoom: 1.0
+  }
+
+- mobile-first CSS
+  тесты на реальных девайсах
+  оптимизация веса, загрузка, производительность
+  верстка
+  прячем контент
+  разное оформление(на мобильном все больше)
+  разное положение элементов интерфейса
+
+
+- Модульные сетки для верстки.
+- Основные составляющие сетки.
+- CSS фреймворки: назначение, функции, возможности.
+- Сетка Bootstrap 4.
+
+
