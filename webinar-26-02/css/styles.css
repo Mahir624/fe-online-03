@@ -1,0 +1,105 @@
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+/* Определяем Retina в CSS */
+/* body {
+  min-height: 100vh;
+  background-image: url("../images/bg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+  (-o-min-device-pixel-ratio: 2/1),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  body {
+    background-image: url("../images/bg@2x.jpeg");
+  }
+} */
+
+/* Резиновый img */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card {
+  text-align: center;
+}
+
+.clock-icon {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  background-image: url("../images/icons/clock.svg");
+  background-size: cover;
+  background-position: center;
+}
+
+.user-icon {
+  fill: #424242;
+}
+
+.user-icon:hover {
+  fill: palevioletred;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+    stroke: #000;
+  }
+}
+
+body {
+  padding: 50px;
+}
+
+.circle-link {
+  display: inline-block;
+  color: red;
+}
+
+.circle-link:hover {
+  color: blue;
+}
+
+.icon-circle {
+  /* stroke: palevioletred; */
+  /* stroke-dasharray: 10;
+  animation-name: rotate;
+  animation-duration: 10s;
+  transform-origin: center;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; */
+}
+
+.login-link,
+.logout-link,
+.home-link {
+  display: inline-block;
+}
+
+.home-link,
+.clock-link {
+  fill: #95e1d3;
+  stroke: orange;
+}
+
+.login-link:hover,
+.logout-link:hover,
+.home-link:hover,
+.clock-link:hover {
+  fill: palevioletred;
+  stroke: teal;
+}
