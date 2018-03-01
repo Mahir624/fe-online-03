@@ -1,0 +1,79 @@
+1. Зачем
+
+2. Хороший код. Нормальный HTML vs Хороший HTML.
+
+3. Плохой CSS vs Хороший CSS
+  https://cssguidelin.es/
+  https://github.com/iamstarkov/CSS-Guidelines/blob/master/README%20Russian.md
+
+4. EditorConfig и Stylelint
+
+5. Методологии
+
+  Как писали раньше и что не так
+    - Глобальные стили, хрупкие интерфейсы.
+    - Война со специфичностью и каскадом.
+    - 20-летний разрыв между идеей и применением.
+    - Столкновение десятков точек зрений.
+    - Отсутствие разумных ограничений.
+
+  БЭМ
+    — Набор абстракций для разработки интерфейса.
+    — Появился от необходимости независимых блоков.
+    — Есть большой БЭМ и малый БЭМ.
+    — Самая популярная методология на пике популярности.
+
+  Почему хорошо
+    - Только классы
+    - Без вложенности
+    - Стили в блоках
+
+    Преимущества БЭМа
+    — Самодокументируемость, строгость, независимость блоков.
+    — Реиспользуемость заложена в основу.
+    — Заточеная на изменение, расширение и поддержку.
+    — Помогает собирать библиотеки компонентов, контрукторы.
+
+Нотация
+http://css-live.ru/articles/bemantika-pishite-osmyslennye-stili-bez-povtorov.html
+
+
+
+Б - блок
+Э - элемент __
+М - модификатор --
+
+BEM-человек
+
+.human
+
+.human--male
+.human--female
+
+.human__head
+.human__torso
+
+.human__hand
+
+.human__hand--left
+.human__hand--right
+
+.human__leg
+
+.human__leg--left
+.human__leg--right
+
+ПЛОХО:
+  Элементы элементов
+  Модификатор или элемент без базы
+
+
+BEM-деревья. Плоское дерево.
+
+
+
+
+https://ru.bem.info/
+https://ru.bem.info/methodology/quick-start/
+https://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/
+http://vitaly.harisov.name/article/independent-blocks.html
