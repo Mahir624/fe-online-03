@@ -1,0 +1,30 @@
+/*
+   Import partials below
+*/
+
+.button {
+	display: inline-block;
+}
+
+.button__icon {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+}
+
+.button__icon:hover {
+	background-color: red;
+}
+
+@media (min-width: 500px) {
+
+.button__icon .text {
+	font-size: 20px;
+}
+
+.button__icon:hover .button {
+	color: red;
+}
+
+}
+
