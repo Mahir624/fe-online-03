@@ -1,0 +1,138 @@
+- What is Sass?
+
+- Compiling Sass to CSS
+
+- Declaring and Using Variables
+
+- Naming Variables
+
+- Nested Selectors
+
+- Use the Ampersand to Reference Parent Selectors
+
+- Extend the Properties of Selectors (@extend)
+
+- Extend Placeholder Selectors (%)
+
+- Interpolation
+ $qwerty: '5';
+// #{$qwerty}
+ span {
+   content: 'random #{$qwerty}';
+ }
+
+- Introducing Mixins, background image Mixin (@mixin, @include)
+
+@mixin pseudo($display: block, $content: '') {
+  display: $display;
+  content: $content;
+}
+
+div::after {
+  @include pseudo(inline-block, '\2107');
+}
+
+
+ @mixin bg-image($path: '', $size: cover, $repeat: no-repeat, $pos: center) {
+   background-image: url($path);
+   background-size: $size;
+   background-repeat: $repeat;
+   background-position: $pos;
+ }
+
+ .icon {
+   display: inline-block;
+   width: 50px;
+   height: 50px;
+   @include bg-image('../img/octocat.svg', 90%, repeat-x, 50% 50%);
+ }
+
+
+
+- Separate Your Stylesheet Into Partials
+
+- Nesting Media Queries
+
+- Color Functions
+ $color: red;
+ body {
+    background-color: lighten($color, 20%);
+    background-color: darken($color, 20%);
+    background-color: rgba(#ccff33, 0.3);
+ }
+
+- Custom Functions, Create a Function for Flexbox Layout
+
+@mixin center-flex($type: 'all') {
+   display: flex;
+
+   @if $type=='all' {
+     justify-content: center;
+     align-items: center;
+   }
+   @else if $type=='hor' {
+     justify-content: center;
+   }
+   @else if $type=='ver' {
+     align-items: center;
+   }
+ }
+
+ div {
+   @include center-flex();
+ }
+
+// Storing Values in Maps
+
+// Color map
+$colors: (
+  primary-dark: #212121,
+  secondary-dark: #424242,
+  suplement-dark: #616161,
+  primary-light: #ffffff,
+  code-highlight: #f7f7f7,
+  note-accent: #fff8e1,
+  note-border: #f9a825,
+  warn-accent: #ffebee,
+  warn-border: #d32f2f
+);
+
+// color picker function
+@function color($key) {
+  @if map-has-key($colors, $key) {
+    @return map-get($colors, $key);
+  }
+
+  @return null;
+}
+
+// Loop Through Lists with @each
+
+%icon {
+  display: inline-block;
+  width: 4rem;
+  height: 4rem;
+}
+
+$icons: facebook, linkedin, twitter;
+
+ @each $icon in $icons {
+   .icon-#{$icon} {
+     @extend %icon;
+     background-image: url(../img/socials/#{$icon}.svg);
+   }
+ }
+ 
+ //========
+ @mixin generate-icons($baseclass, $list, $path, $ext) {
+  @each $icon in $list {
+    .#{$baseclass}#{$icon} {
+      @extend %icon;
+      background-image: url(#{$path}#{$icon}.#{$ext});
+    }
+  }
+}
+
+@include generate-icons('icon-', $icons, '../img/social-icons/', 'png');
+ 
+ 

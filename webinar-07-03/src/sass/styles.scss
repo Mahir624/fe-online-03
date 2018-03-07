@@ -1,0 +1,85 @@
+/*
+   Import partials below
+*/
+// @import 'normalize';
+@import "vars";
+@import 'main';
+
+// $icon-name: 'icon-logo.png';
+// .icon {
+//   background-image: url('img/icons/#{$icon-name}');
+// }
+
+// $font-sizes: (
+//   small: 14px,
+//   medium: 16px,
+//   large: 20px
+// );
+
+// @function font-size($key) {
+//   @if map-has-key($font-sizes, $key) {
+//     @return map-get($font-sizes, $key);
+//   }
+
+//   @return null;
+// }
+
+// .text {
+//   font-size:font-size(large);
+// }
+
+// $colors: (
+//   primary-dark: #212121,
+//   secondary-dark: #424242,
+//   suplement-dark: #616161,
+//   primary-light: #ffffff,
+//   code-highlight: #f7f7f7,
+//   note-accent: #fff8e1,
+//   note-border: #f9a825,
+//   warn-accent: #ffebee,
+//   warn-border: #d32f2f
+// );
+
+// @function color($key) {
+//   @if map-has-key($colors, $key) {
+//     @return map-get($colors, $key);
+//   }
+
+//   @return null;
+// }
+
+// %icon {
+//   display: inline-block;
+//   width: 4rem;
+//   height: 4rem;
+// }
+
+
+
+// @each $icon in $icons-list {
+//   .icon-#{$icon} {
+//     @extend %icon;
+//     background-image: url("../img/socials/#{$icon}.svg");
+//   }
+// }
+
+%icon {
+  display: inline-block;
+  width: 4rem;
+  height: 4rem;
+}
+
+$icons-list: facebook, linkedin, twitter;
+
+@mixin generate-icons($baseclass, $list, $path, $ext) {
+  @each $icon in $list {
+    .#{$baseclass}#{$icon} {
+      @extend %icon;
+      background-image: url(#{$path}#{$icon}.#{$ext});
+    }
+  }
+}
+
+@include generate-icons('icon-', $icons-list, '../img/social-icons/', 'png');
+
+@include generate-icons('socials-', $icons-list, '../img/socials-svg/', 'svg');

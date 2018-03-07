@@ -1,0 +1,43 @@
+/*
+   Import partials below
+*/
+
+body {
+	background-color: #424242;
+}
+
+.icon-facebook,
+.icon-linkedin,
+.icon-twitter,
+.socials-facebook,
+.socials-linkedin,
+.socials-twitter {
+	display: inline-block;
+	width: 4rem;
+	height: 4rem;
+}
+
+.icon-facebook {
+	background-image: url(../img/social-icons/facebook.png);
+}
+
+.icon-linkedin {
+	background-image: url(../img/social-icons/linkedin.png);
+}
+
+.icon-twitter {
+	background-image: url(../img/social-icons/twitter.png);
+}
+
+.socials-facebook {
+	background-image: url(../img/socials-svg/facebook.svg);
+}
+
+.socials-linkedin {
+	background-image: url(../img/socials-svg/linkedin.svg);
+}
+
+.socials-twitter {
+	background-image: url(../img/socials-svg/twitter.svg);
+}
+
