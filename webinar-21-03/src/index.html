@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Placeholder title</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.min.css">
+</head>
+
+<body>
+
+  <form class="filter-form">
+    <section class="size-filter">
+      <h3 class="size-filter__title">Filter By Size</h3>
+      <ul class="size-filter__list">
+        <li class="size-filter__item">
+          <input class="size-filter__check visually-hidden" type="checkbox" id="size-s">
+          <label class="size-filter__label" for="size-s">
+            <span class="size-filter__item-size">s</span>
+            <span class="size-filter__item-count">3</span>
+          </label>
+        </li>
+        <li class="size-filter__item">
+          <input class="size-filter__check visually-hidden" type="checkbox" id="size-m">
+          <label class="size-filter__label" for="size-m">
+            <span class="size-filter__item-size">m</span>
+            <span class="size-filter__item-count">4</span>
+          </label>
+        </li>
+        <li class="size-filter__item">
+          <input class="size-filter__check visually-hidden" type="checkbox" id="size-l">
+          <label class="size-filter__label" for="size-l">
+            <span class="size-filter__item-size">l</span>
+            <span class="size-filter__item-count">4</span>
+          </label>
+        </li>
+        <li class="size-filter__item">
+          <input class="size-filter__check visually-hidden" type="checkbox" id="size-xl">
+          <label class="size-filter__label" for="size-xl">
+            <span class="size-filter__item-size">xl</span>
+            <span class="size-filter__item-count">5</span>
+          </label>
+        </li>
+        <li class="size-filter__item">
+          <input class="size-filter__check visually-hidden" type="checkbox" id="size-xx">
+          <label class="size-filter__label" for="size-xx">
+            <span class="size-filter__item-size">xx</span>
+            <span class="size-filter__item-count">6</span>
+          </label>
+        </li>
+      </ul>
+    </section>
+  </form>
+
+  <!-- Modal Window -->
+  <!-- <button class="show-modal-btn">Показать модальное окно</button> -->
+  <div class="modal modal-hidden">
+    <div class="modal-content">
+      <button class="modal-close">&times;</button>
+      <p>Вы уверены что хотите удалить аккаунт?</p>
+      <button>Да</button>
+      <button>Нет</button>
+    </div>
+  </div>
+
+  <!-- RANGE FILTER -->
+  <!-- <div class="range-filter">
+    <div class="range-controls">
+      <div class="scale">
+        <div class="bar" style="width: 70%;"></div>
+      </div>
+
+      <div class="range-toggle range-toggle-min"></div>
+      <div class="range-toggle range-toggle-max"></div>
+    </div>
+
+    <div class="price-controls">
+      <label class="min-price">
+        от
+        <input type="text" value="1000" name="min_price">
+      </label>
+
+      <label class="max-price">
+        до
+        <input type="text" value="10 000" name="max_price">
+      </label>
+    </div>
+  </div> -->
+
+  <script>
+    const showModalbtn = document.querySelector('.show-modal-btn');
+    const modal = document.querySelector('.modal');
+
+    const onShowModalClick = () => {
+      modal.classList.remove('modal-hidden');
+    }
+
+    showModalbtn.addEventListener('click', onShowModalClick);
+
+    function Modal({ backdropSelector, closeBtnSelector }) {
+      const backdrop = document.querySelector(backdropSelector);
+      const closeBtn = document.querySelector(closeBtnSelector);
+
+      const onBackDropClick = evt => {
+        if (evt.target === backdrop) {
+          backdrop.classList.add('modal-hidden');
+        }
+      };
+
+      const oncloseBtnClick = () => {
+        backdrop.classList.add('modal-hidden');
+      };
+
+      window.addEventListener('click', onBackDropClick);
+      closeBtn.addEventListener('click', oncloseBtnClick);
+    }
+
+    new Modal({
+      backdropSelector: '.modal',
+      closeBtnSelector: '.modal-close'
+    })
+  </script>
+</body>
+
+</html>
